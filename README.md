@@ -1,4 +1,4 @@
-![](https://github.com/Jon-Dickinson/CSSR/blob/master/assets/images/CSSR.png)
+![](https://github.com/Jon-Dickinson/CSSR/blob/master/assets/images/screenshot-CSSR.png)
 
 https://www.cssreactions.com/
 
