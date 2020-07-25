@@ -22,24 +22,24 @@
 
   <main class="if__base-wrapper pad-tb-0 direction--column">
 
-    <header class="if__base-wrapper pad-tb-0 direction--column bg-e8e8e8 golden--618-height">
+    <header class="if__base-wrapper pad-tb-0 direction--column bg-e8e8e8 golden--618-height h-100-under--1024 padding-b-40--under-1024">
 
-      <div class="flex__mid-container max-w-1280">
-        <div class="horizontal-inline-flex justify--center margin-t-40">
+      <div class="flex__mid-container max-w-1280 ">
+        <div class="horizontal-inline-flex justify--center margin-t-40  column-under--1024">
 
-          <div class="vertical-inline-flex h-100 justify--flex-start padding-r-50">
-            <h1 class="main-heading uppercase margin-b-0 margin-t-10"> CSS Reactions </h1>
-            <p class="font-s--16 font-w--500 margin-t-20">
+          <div class="vertical-inline-flex h-100 justify--flex-start padding-r-50 align--center-under--1024 padding-lr-10--under-1024 order-2--under-1024">
+            <h1 class="main-heading uppercase margin-b-0 margin-t-10 t-align--c-under--1024"> CSS Reactions </h1>
+            <p class="font-s--16 font-w--500 margin-t-20 t-align--c-under--1024 max-w-768">
               UI web development based on an extrapolation of the W3C Visual Formatting Model and component-based
               design.
               CSSR is a content independent naming pattern that allows one to efficiently develop browser compatible
               components and complex layouts.
             </p>
-            <div class="ib__content-panel margin-t-80">
+            <div class="ib__content-panel margin-t-80 margin-t-40--under-1024">
 
 
-              <div class="if__content-panel align--center">
-                <a href="https://github.com/Jon-Dickinson" class="color--default  margin-r-20" target="_blank"
+              <div class="if__content-panel align--center justify--center-under--1024 w-100-perc--under-1024">
+                <a href="https://github.com/Jon-Dickinson" class="color--default  margin-r-20 " target="_blank"
                   rel="noopener">
                   <span class="icon social-icon-github font-s--32"> </span>
                 </a>
@@ -61,7 +61,7 @@
 
           </div>
 
-          <div class="vertical-inline-flex justify--flex-end align--flex-end">
+          <div class="vertical-inline-flex justify--flex-end align--flex-end justify--center-under--1024 align--center-under--1024 order-1--under-1024">
 
 
             <div class="logo">
@@ -83,12 +83,12 @@
 
       <div class="flex__mid-container align--center justify--space-between max-w-1280">
         <div class="vertical-inline-flex">
-          <div class="if__content-panel w-100-perc align--center justify--flex-end pad-tb-20">
+          <div class="if__content-panel w-100-perc align--center justify--flex-end pad-tb-20 column-under--960">
 
 
 
 
-            <a href="https://github.com/Jon-Dickinson" class="font-s--13 button-outline margin-r-40 pad-lr-0"
+            <a href="https://github.com/Jon-Dickinson" class="font-s--13 button-outline  pad-lr-0 margin-r-40 margin-lr-0--under-1024 "
               target="_blank" rel="noopener">
               <div class="download-animation">
 
@@ -108,7 +108,7 @@
 
 
 
-            <a href="https://github.com/Jon-Dickinson" class="font-s--13 button-outline  pad-lr-0" target="_blank"
+            <a href="https://github.com/Jon-Dickinson" class="font-s--13 button-outline  pad-lr-0 margin-t-20--under-1024" target="_blank"
               rel="noopener">
               <div class="download-animation">
 
@@ -132,42 +132,119 @@
       </div>
 
     </div>
+
     <div class="vertical-inline-flex h-100 bg-e8e8e8">
-      <div class="flex__mid-container max-w-1280 direction--column ">
-        <div class="if__content-panel w-100-perc justify--flex-start margin-t-50">.
+      <div class="flex__mid-container max-w-1140 ">
+        <div class="if__content-panel w-100-perc margin-t-50">.
           <div class="ib__content-panel pad-tb-40">
-            <img class="max-w-100p margin-r-30" src="assets/images/emotion.png">
+            <img class="max-w-80p float-l margin-r-30 " src="assets/images/emotion.png">
 
-            <img class="max-w-100p margin-r-30" src="assets/images/react.svg">
+            <img class="max-w-80p float-l margin-r-30" src="assets/images/react.svg">
 
-            <img class="max-w-100p" src="assets/images/typescript.svg">
+            <img class="max-w-80p float-l" src="assets/images/typescript.svg">
 
           </div>
 
         </div>
-        <div class="if__content-panel w-100-perc direction--column pad-tb-20 margin-t-50">
+        
+      </div>
 
-          <h4 class="font-s--24 font-w--300 ">
+    </div>
 
+    <div class="vertical-inline-flex pad-tb-40 h-100 bg-e8e8e8">
+           
 
-            Component Descriptions define components in isolation.
-          </h4>
-          <p class="font-s--18 margin-t-10">
-            The class name answers the question:
-            what does it do?
-          </p>
+      <div class="flex__mid-container max-w-1140">
 
+        <div class="vertical-inline-flex">
 
+<xmp class="vertical-inline-flex max-w-440p margin-r-20">import styled from '@emotion/styled';
+import { css } from '@emotion/core';
+  
+const inlineFlexBase = css`
+  position: relative;
+  display: inline-flex;
+  width: 100%;
+`;
+
+export const BaseWrapperVertical = styled.div`
+  ${ inlineFlexBase };
+
+  flex-direction: column;
+`;
+
+export const BaseWrapperHorizontal = styled.div`
+  ${ inlineFlexBase };
+
+  flex-direction: row;
+`;
+
+or
+
+interface IFlexWrapperProps {
+  flexDirection: 'row' | 'column';
+}
+
+export const FlexWrapper = styled.div<IFlexWrapperProps>`
+  ${ inlineFlexBase };
+`;
+
+</xmp>
+
+          </div>
         </div>
+  </div>
 
+
+
+
+  <div class="vertical-inline-flex pad-tb-40 h-100 bg-color-blue">
+           
+
+    <div class="flex__mid-container direction--column max-w-1140">
+      <div class="if__content-panel w-100-perc direction--column pad-tb-20">
+
+        <h4 class="font-s--24 font-w--300 color--ffffff">
+
+
+          Component Descriptions define components in isolation.
+        </h4>
+        <p class="font-s--16 margin-t-0 color--ffffff">
+          The component name answers the question:
+          what does it do?
+        </p>
 
 
       </div>
+      <div class="if__content-panel w-100-perc direction--column pad-tb-20  margin-t-20">
+        <h4 class="font-s--24 font-w--300 color--ffffff">
+          Interface Descriptions define components in relation to their environment.
+        </h4>
+        <p class="font-s--16 margin-t-0 color--ffffff">
+          The component name answers the question:
+          How can it be used?
+        </p>
+      </div>
+    </div>
+
+
+  </div>
+
+    <div class="vertical-inline-flex h-100 bg-e8e8e8">
+       
+       
+      
+
+
+     
+
+
+
       <div class="horizontal-inline-flex pad-tb-40 h-100">
-        <div class="flex__mid-container direction--column max-w-1280">
+        <div class="flex__mid-container direction--column max-w-1140">
 
           <div class="grid  margin-t-80">
-            <div class="grid__inner">
+            <div class="grid__inner column-under--960">
 
 <xmp class="vertical-inline-flex  w-100-perc max-w-440p margin-r-20 ">BaseWrapper {
   position: relative;
@@ -192,13 +269,13 @@ const IFBaseWrapper = styled('div')`
 render(<IFBaseWrapper> </IFBaseWrapper>)
 
 </xmp>
-              <div class="browser-window shadow-4">
+              <div class="browser-window ">
                 <div class="browser-window__bar">
                   <div class="dot"></div>
                   <div class="dot"></div>
                   <div class="dot"></div>
                 </div>
-                <div class="browser-window__content  bg-1c2542">
+                <div class="browser-window__content">
                   <div class="if__base-wrapper border-2px-blue">
                   </div>
                 </div>
@@ -209,9 +286,9 @@ render(<IFBaseWrapper> </IFBaseWrapper>)
       </div>
       <div class="vertical-inline-flex h-100">
         <div class="horizontal-inline-flex pad-tb-40 h-100">
-          <div class="flex__mid-container max-w-1280">
+          <div class="flex__mid-container max-w-1140">
             <div class="grid">
-              <div class="grid__inner">
+              <div class="grid__inner column-under--960">
 <xmp class="vertical-inline-flex max-w-440p margin-r-20 ">MidContainer {
   position: relative;
   margin-left: auto;
@@ -219,6 +296,7 @@ render(<IFBaseWrapper> </IFBaseWrapper>)
   padding-left: 20px;
   padding-right: 20px;
   width: 100%;
+  max-width: ${ width };
 }
 
 F { display: flex; }
@@ -227,7 +305,7 @@ B { display: block; }
 <FMidContainer />
 <BMidContainer />
 </xmp>
-                <div class="browser-window shadow-4">
+                <div class="browser-window ">
                   <div class="browser-window__bar">
                     <div class="dot"></div>
                     <div class="dot"></div>
@@ -246,9 +324,9 @@ B { display: block; }
         </div>
         <div class="vertical-inline-flex h-100">
           <div class="horizontal-inline-flex pad-tb-40 h-100">
-            <div class="flex__mid-container max-w-1280">
+            <div class="flex__mid-container max-w-1140">
               <div class="grid">
-                <div class="grid__inner">
+                <div class="grid__inner column-under--960">
 
 <xmp class="vertical-inline-flex max-w-440p margin-r-20 ">ContentPanel { position: relative; }
 
@@ -262,7 +340,7 @@ B { display: block; }
 <F ContentPanel />
 <B ContentPanel />
 </xmp>
-                  <div class="browser-window shadow-4">
+                  <div class="browser-window ">
                     <div class="browser-window__bar">
                       <div class="dot"></div>
                       <div class="dot"></div>
@@ -285,29 +363,38 @@ B { display: block; }
               </div>
             </div>
           </div>
+ 
+          <div class="vertical-inline-flex pad-tb-40 h-100 bg-e8e8e8 margin-t-100">
+           
 
-          <div class="flex__mid-container direction--column max-w-1280">
-            <div class="if__content-panel w-100-perc direction--column pad-tb-20  margin-t-150">
-              <h4 class="font-s--24 font-w--300 ">
-                Interface Descriptions define components in relation to their environment.
-              </h4>
-              <p class="font-s--18 margin-t-10">
-                The class name answers the question:
-                How can it be used?
-              </p>
+              <div class="flex__mid-container max-w-1140">
+
+                <div class="vertical-inline-flex">
+
+<xmp class="vertical-inline-flex max-w-440p margin-r-20">interface IFlexProps = {
+  direction?: 'row' | 'column',
+}
+
+export const Flex = styled.div<IFlexProps>`
+  position: relative;
+  display: inline-flex;
+
+  flex-direction: ${props => props.direction};
+  flex-direction: ${direction};
+`;
+
+render(<Flex direction="row"></Flex>)
 
 
-            </div>
+</xmp>
 
-
+                  </div>
+                </div>
           </div>
-
-
-          <div class="vertical-inline-flex h-100">
-            <div class="horizontal-inline-flex pad-tb-40 h-100">
-              <div class="flex__mid-container max-w-1280">
+          <div class="vertical-inline-flex pad-tb-40 h-100">
+                <div class="flex__mid-container max-w-1140">
                 <div class="grid margin-t-80">
-                  <div class="grid__inner">
+                  <div class="grid__inner column-under--960">
 
 <xmp class="vertical-inline-flex max-w-440p margin-r-20 ">HorizontalIF {
   position: relative;
@@ -320,7 +407,7 @@ F { display: flex; }
 <Horizontal IF />
 <Horizontal F />
 </xmp>
-                    <div class="browser-window shadow-4">
+                    <div class="browser-window ">
                       <div class="browser-window__bar">
                         <div class="dot"></div>
                         <div class="dot"></div>
@@ -351,12 +438,12 @@ F { display: flex; }
                 </div>
               </div>
             </div>
-          </div>
+          
           <div class="vertical-inline-flex h-100">
             <div class="horizontal-inline-flex pad-tb-40 h-100">
-              <div class="flex__mid-container max-w-1280">
+              <div class="flex__mid-container max-w-1140">
                 <div class="grid">
-                  <div class="grid__inner">
+                  <div class="grid__inner column-under--960">
 
 <xmp class="vertical-inline-flex max-w-440p margin-r-20 ">VerticalIF {
   position: relative;
@@ -369,7 +456,7 @@ F { display: flex; }
 <Vertical IF />
 <Vertical F />
 </xmp>
-                    <div class="browser-window shadow-4">
+                    <div class="browser-window ">
                       <div class="browser-window__bar">
                         <div class="dot"></div>
                         <div class="dot"></div>
@@ -407,11 +494,11 @@ F { display: flex; }
 
             <div class="vertical-inline-flex h-100">
               <div class="horizontal-inline-flex pad-tb-40 h-100">
-                <div class="flex__mid-container max-w-1280">
+                <div class="flex__mid-container max-w-1140">
                   <div class="grid">
-                    <div class="grid__inner">
+                    <div class="grid__inner column-under--960">
 
-                      <div class="browser-window shadow-4 max-w-100-perc">
+                      <div class="browser-window  max-w-100-perc">
                         <div class="browser-window__bar">
                           <div class="dot"></div>
                           <div class="dot"></div>
@@ -497,11 +584,11 @@ F { display: flex; }
 
             <div class="vertical-inline-flex h-100">
               <div class="horizontal-inline-flex pad-tb-40 h-100">
-                <div class="flex__mid-container max-w-1280">
+                <div class="flex__mid-container max-w-1140">
                   <div class="grid">
-                    <div class="grid__inner">
+                    <div class="grid__inner column-under--960">
 
-                      <div class="browser-window shadow-4 max-w-100-perc">
+                      <div class="browser-window  max-w-100-perc">
                         <div class="browser-window__bar">
                           <div class="dot"></div>
                           <div class="dot"></div>
@@ -587,7 +674,7 @@ F { display: flex; }
 
           </div>
 
-          <div class="flex__mid-container max-w-1280">
+          <div class="flex__mid-container max-w-1140">
             <div class="if__content-panel w-100-perc direction--column pad-tb-20  margin-t-150">
               <h4 class="font-s--24 font-w--300 ">
                 Containing Blocks
@@ -603,10 +690,10 @@ F { display: flex; }
 
           <div class="vertical-inline-flex h-100">
             <div class="horizontal-inline-flex pad-tb-40 h-100">
-              <div class="flex__mid-container max-w-1280">
+              <div class="flex__mid-container max-w-1140">
 
                 <div class="grid">
-                  <div class="grid__inner">
+                  <div class="grid__inner column-under--960">
 
 <xmp class="vertical-inline-flex max-w-440p margin-r-20 ">AbsoluteCenterIF {
   position: absolute;
@@ -624,7 +711,7 @@ F { display: flex; }
 <AbsoluteCenter IF />
 <AbsoluteCenter F />
 </xmp>
-                    <div class="browser-window shadow-4">
+                    <div class="browser-window ">
                       <div class="browser-window__bar">
                         <div class="dot"></div>
                         <div class="dot"></div>
@@ -665,10 +752,10 @@ F { display: flex; }
 
           <div class="vertical-inline-flex h-100">
             <div class="horizontal-inline-flex pad-tb-40 h-100">
-              <div class="flex__mid-container max-w-1280">
+              <div class="flex__mid-container max-w-1140">
 
                 <div class="grid">
-                  <div class="grid__inner">
+                  <div class="grid__inner column-under--960">
 
 <xmp class="vertical-inline-flex max-w-440p margin-r-20 ">RelativeCenterIF {
   position: relative;
@@ -686,7 +773,7 @@ F { display: flex; }
 <RelativeCenter IF />
 <RelativeCenter F />
 </xmp>
-                    <div class="browser-window shadow-4">
+                    <div class="browser-window ">
                       <div class="browser-window__bar">
                         <div class="dot"></div>
                         <div class="dot"></div>
@@ -728,11 +815,11 @@ F { display: flex; }
 
           <div class="vertical-inline-flex h-100">
             <div class="horizontal-inline-flex pad-tb-40 h-100">
-              <div class="flex__mid-container max-w-1280">
+              <div class="flex__mid-container max-w-1140">
 
                 <div class="grid">
-                  <div class="grid__inner">
-                    <div class="browser-window shadow-4 max-w-100-perc">
+                  <div class="grid__inner column-under--960">
+                    <div class="browser-window  max-w-100-perc">
                       <div class="browser-window__bar">
                         <div class="dot"></div>
                         <div class="dot"></div>
@@ -778,11 +865,11 @@ F { display: flex; }
 
           <div class="vertical-inline-flex h-100">
             <div class="horizontal-inline-flex pad-tb-40 h-100">
-              <div class="flex__mid-container max-w-1280">
+              <div class="flex__mid-container max-w-1140">
 
                 <div class="grid">
-                  <div class="grid__inner">
-                    <div class="browser-window shadow-4 max-w-100-perc">
+                  <div class="grid__inner column-under--960">
+                    <div class="browser-window  max-w-100-perc">
                       <div class="browser-window__bar">
                         <div class="dot"></div>
                         <div class="dot"></div>
@@ -832,11 +919,11 @@ F { display: flex; }
 
           <div class="vertical-inline-flex h-100">
             <div class="horizontal-inline-flex pad-tb-40 h-100">
-              <div class="flex__mid-container max-w-1280">
+              <div class="flex__mid-container max-w-1140">
 
                 <div class="grid">
-                  <div class="grid__inner">
-                    <div class="browser-window shadow-4 max-w-100-perc">
+                  <div class="grid__inner column-under--960">
+                    <div class="browser-window  max-w-100-perc">
                       <div class="browser-window__bar">
                         <div class="dot"></div>
                         <div class="dot"></div>
@@ -924,8 +1011,86 @@ F { display: flex; }
             </div>
           </div>
 
+          <div class="vertical-inline-flex pad-tb-40 h-100">
+           
+
+            <div class="flex__mid-container direction--column max-w-1140">
+              <div class="if__content-panel w-100-perc direction--column pad-tb-20 margin-t-100">
+        
+                <h4 class="font-s--24 font-w--300">
+        
+        
+                  Component Dependent Naming
+                </h4>
+                <p class="font-s--16 margin-t-0">
+                  Components are not reusable
+                </p>
+        
+        
+              </div>
+              <div class="vertical-inline-flex">
+                <p class="color--default">
+                  <code class="margin-l-0 pad-all-5">.nav-bar</code>
+                </p>
+                <div class="horizontal-inline-flex column-under--960 pad-all-20 border-2px-white">
+                  <div class="if__content-panel direction--column flex--1 margin-lr-10">
+                    <code class="margin-lr-0 pad-all-5 color--default font-s--12">.nav-bar__item</code>
+                    <div class="horizontal-inline-flex direction--column pad-all-20 margin-b-10 border-2px-white">
+                    </div>
+                  </div>
+                  <div class="if__content-panel direction--column flex--1 margin-lr-10">
+                    <code class="margin-lr-0 pad-all-5 color--default font-s--12">.nav-bar__item</code>
+                    <div class="horizontal-inline-flex direction--column pad-all-20 margin-b-10 border-2px-white">
+                    </div>
+                  </div>
+                  <div class="if__content-panel direction--column flex--1 margin-lr-10">
+                    <code class="margin-lr-0 pad-all-5 color--default font-s--12">.nav-bar__item</code>
+                    <div class="horizontal-inline-flex direction--column pad-all-20 margin-b-10 border-2px-white">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="if__content-panel w-100-perc direction--column pad-tb-20  margin-t-100">
+                <h4 class="font-s--24 font-w--300">
+                  Component Independent Naming
+                </h4>
+                <p class="font-s--16 margin-t-0">
+                  Components are reusable
+                </p>
+              </div>
+              <div class="vertical-inline-flex">
+
+                <p class="color--default">
+                  <code class="margin-l-0 pad-all-5">.horizontal-inline-flex</code>
+                </p>
+
+                <div class="horizontal-inline-flex column-under--960 pad-all-20 border-2px-white">
+                  <div class="if__content-panel direction--column flex--1 margin-lr-10">
+                    <code class="margin-lr-0 pad-all-5 color--default font-s--12">.margin-lr-20</code>
+                    <div class="horizontal-inline-flex direction--column pad-all-20 margin-b-10 border-2px-white">
+                    </div>
+                  </div>
+                  <div class="if__content-panel direction--column flex--1 margin-lr-10">
+                    <code class="margin-lr-0 pad-all-5 color--default font-s--12">.margin-lr-20</code>
+                    <div class="horizontal-inline-flex direction--column pad-all-20 margin-b-10 border-2px-white">
+                    </div>
+                  </div>
+                  <div class="if__content-panel direction--column flex--1 margin-lr-10">
+                    <code class="margin-lr-0 pad-all-5 color--default font-s--12">.margin-lr-20</code>
+                    <div class="horizontal-inline-flex direction--column pad-all-20 margin-b-10 border-2px-white">
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+        
+        
+          </div>
+
           <div class="vertical-inline-flex h-100">
-            <div class="flex__mid-container max-w-1280">
+            <div class="flex__mid-container max-w-1140">
 
 
               <div class="horizontal-inline-flex justify--center margin-t-150">
@@ -934,54 +1099,8 @@ F { display: flex; }
                 <div class="vertical-inline-flex">
 
 
-                  <div class="vertical-inline-flex">
-
-                    <p class="color--default">
-                      <code class="margin-l-0 pad-all-5">.horizontal-inline-flex</code>
-                    </p>
-
-                    <div class="horizontal-inline-flex direction--column--under-768 pad-all-20 border-2px-white">
-                      <div class="if__content-panel direction--column flex--1 margin-lr-10">
-                        <code class="margin-lr-0 pad-all-5 color--default font-s--12">.margin-lr-20</code>
-                        <div class="horizontal-inline-flex direction--column pad-all-20 margin-b-10 border-2px-white">
-                        </div>
-                      </div>
-                      <div class="if__content-panel direction--column flex--1 margin-lr-10">
-                        <code class="margin-lr-0 pad-all-5 color--default font-s--12">.margin-lr-20</code>
-                        <div class="horizontal-inline-flex direction--column pad-all-20 margin-b-10 border-2px-white">
-                        </div>
-                      </div>
-                      <div class="if__content-panel direction--column flex--1 margin-lr-10">
-                        <code class="margin-lr-0 pad-all-5 color--default font-s--12">.margin-lr-20</code>
-                        <div class="horizontal-inline-flex direction--column pad-all-20 margin-b-10 border-2px-white">
-                        </div>
-                      </div>
-                    </div>
-
-                  </div>
-
-                  <div class="vertical-inline-flex">
-                    <p class="color--default">
-                      <code class="margin-l-0 pad-all-5">.nav-bar</code>
-                    </p>
-                    <div class="horizontal-inline-flex direction--column--under-768 pad-all-20 border-2px-white">
-                      <div class="if__content-panel direction--column flex--1 margin-lr-10">
-                        <code class="margin-lr-0 pad-all-5 color--default font-s--12">.nav-bar__item</code>
-                        <div class="horizontal-inline-flex direction--column pad-all-20 margin-b-10 border-2px-white">
-                        </div>
-                      </div>
-                      <div class="if__content-panel direction--column flex--1 margin-lr-10">
-                        <code class="margin-lr-0 pad-all-5 color--default font-s--12">.nav-bar__item</code>
-                        <div class="horizontal-inline-flex direction--column pad-all-20 margin-b-10 border-2px-white">
-                        </div>
-                      </div>
-                      <div class="if__content-panel direction--column flex--1 margin-lr-10">
-                        <code class="margin-lr-0 pad-all-5 color--default font-s--12">.nav-bar__item</code>
-                        <div class="horizontal-inline-flex direction--column pad-all-20 margin-b-10 border-2px-white">
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                  
+               
 
 
                 </div>
@@ -990,9 +1109,9 @@ F { display: flex; }
             </div>
 
             <div class="horizontal-inline-flex pad-tb-40 h-100">
-              <div class="flex__mid-container max-w-1280">
+              <div class="flex__mid-container max-w-1140">
                 <div class="grid">
-                  <div class="grid__inner">
+                  <div class="grid__inner column-under--960">
 
 <xmp class="vertical-inline-flex max-w-620 margin-r-20">
 :root {
