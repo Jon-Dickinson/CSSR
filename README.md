@@ -71,13 +71,13 @@ html {
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Poppins', sans-serif;
   color: var(--color-default);
   font-size: 1rem;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #1c2542;
+  background-color: #ffffff;
   width: 100%;
   overflow-x: hidden;
   -webkit-tap-highlight-color: transparent;
@@ -100,9 +100,9 @@ img {
   height: auto;
 }
 
-/* ********************
-         BASE
-******************** */
+/* ****************************************
+                     BASE
+**************************************** */
 
 [class*="base-wrapper"] {
   position: relative;
@@ -119,9 +119,9 @@ img {
   display: inline-block;
 }
 
-/* ********************
-        CENTER
-******************** */
+/* ****************************************
+                    CENTER
+**************************************** */
 
 [class*="mid-container"] {
   position: relative;
@@ -140,9 +140,9 @@ img {
   display: block;
 }
 
-/* ********************
-        CONTENT
-******************** */
+/* ****************************************
+                    CONTENT
+**************************************** */
 
 [class*="content-panel"] {
   position: relative;
@@ -167,9 +167,9 @@ img {
   display: block;
 }
 
-/* ********************
-      LAYOUT MODE
-******************** */
+/* ****************************************
+                  LAYOUT MODE
+**************************************** */
 
 .display-flex {
   display: flex !important;
@@ -187,9 +187,9 @@ img {
   display: inline-block !important;
 }
 
-/* ********************
-        MIXED
-******************** */
+/* ****************************************
+                    MIXED
+**************************************** */
 
 .vertical-inline-flex {
   position: relative;
@@ -204,9 +204,13 @@ img {
   width: 100%;
 }
 
-/* ********************
-        UTILITY
-******************** */
+/* ****************************************
+                  UTILITY
+**************************************** */
+
+.max-w-1280 { max-width: 1200px; }
+.bg-e8e8e8 { background-color: #d8d8d8; }
+.w-100 { width: 100%; }
 
 .direction--row { flex-direction: row }
 .direction--column { flex-direction: column }
@@ -256,9 +260,9 @@ img {
   transform: translate(0%, -50%);
 }
 
-/* ********************
-        MOBILE
-******************** */
+/* ****************************************
+                  MOBILE
+**************************************** */
 
 @media screen and (max-width: 960px) {
   .column-under--960 {
