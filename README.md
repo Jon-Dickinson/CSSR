@@ -6,6 +6,28 @@ UI web development based on an extrapolation of the W3C Visual Formatting Model 
 ### Multi-Class Naming Pattern
 
 ```
+<main class="if__base-wrapper direction--column">
+  <header class="vertical-inline-flex bg-e8e8e8">
+    <div class="flex__mid-container max-w-1280">
+      <div class="if__content-panel align--center">
+        <p> </p>
+      </div>
+    </div>
+  </header>
+  <section class="vertical-inline-flex">
+    <div class="flex__mid-container max-w-1280">
+      <div class="if__content-panel align--center w-100">
+        <p> </p>
+      </div>
+      <div class="if__content-panel align--center w-100">
+        <p> </p>
+      </div>
+    </div>
+  </section>
+</main>
+```
+
+```       
 :root {
   --primary-1: #ffffff;
   --primary-2: #eeeeee;
