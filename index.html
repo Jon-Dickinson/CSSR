@@ -8,8 +8,10 @@
   <meta name="description" content="Reusable CSS Framework for Web UI Development" />
   <title>CSSR™</title>
   <link rel="shortcut icon" href="https://www.cssreactions.com/favicon.ico" />
-  <link rel="icon" type="image/png" href="https://www.cssreactions.com/assets/images/brand/favicon-16x16.png" sizes="16x16" />
-  <link rel="icon" type="image/png" href="https://www.cssreactions.com/assets/images/brand/favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="https://www.cssreactions.com/assets/images/brand/favicon-16x16.png"
+    sizes="16x16" />
+  <link rel="icon" type="image/png" href="https://www.cssreactions.com/assets/images/brand/favicon-32x32.png"
+    sizes="32x32" />
   <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.0/normalize.css" />
   <link rel="stylesheet" type="text/css" href="assets/css/cssr-restart.css" />
   <link rel="stylesheet" type="text/css" href="assets/css/custom.css" />
@@ -22,12 +24,14 @@
 
   <main class="if__base-wrapper pad-tb-0 direction--column">
 
-    <header class="if__base-wrapper pad-tb-0 direction--column bg-e8e8e8 golden--618-height h-100-under--1024 padding-b-40--under-1024">
+    <header
+      class="if__base-wrapper pad-tb-0 direction--column bg-e8e8e8 golden--618-height h-100-under--1024 padding-b-40--under-1024">
 
       <div class="flex__mid-container max-w-1280 ">
         <div class="horizontal-inline-flex justify--center margin-t-40  column-under--1024">
 
-          <div class="vertical-inline-flex h-100 justify--flex-start padding-r-50 align--center-under--1024 padding-lr-10--under-1024 order-2--under-1024">
+          <div
+            class="vertical-inline-flex h-100 justify--flex-start padding-r-50 align--center-under--1024 padding-lr-10--under-1024 order-2--under-1024">
             <h1 class="main-heading uppercase margin-b-0 margin-t-10 t-align--c-under--1024"> CSS Reactions </h1>
             <p class="font-s--16 font-w--500 margin-t-20 t-align--c-under--1024 max-w-768">
               UI web development based on an extrapolation of the W3C Visual Formatting Model and component-based
@@ -61,7 +65,8 @@
 
           </div>
 
-          <div class="vertical-inline-flex justify--flex-end align--flex-end justify--center-under--1024 align--center-under--1024 order-1--under-1024">
+          <div
+            class="vertical-inline-flex justify--flex-end align--flex-end justify--center-under--1024 align--center-under--1024 order-1--under-1024">
 
 
             <div class="logo">
@@ -88,8 +93,9 @@
 
 
 
-            <a href="https://github.com/Jon-Dickinson" class="font-s--13 button-outline  pad-lr-0 margin-r-40 margin-lr-0--under-1024 "
-              target="_blank" rel="noopener">
+            <a href="https://github.com/Jon-Dickinson"
+              class="font-s--13 button-outline  pad-lr-0 margin-r-40 margin-lr-0--under-1024 " target="_blank"
+              rel="noopener">
               <div class="download-animation">
 
                 <span class="download-inner-top">
@@ -108,8 +114,8 @@
 
 
 
-            <a href="https://github.com/Jon-Dickinson" class="font-s--13 button-outline  pad-lr-0 margin-t-20--under-1024" target="_blank"
-              rel="noopener">
+            <a href="https://github.com/Jon-Dickinson"
+              class="font-s--13 button-outline  pad-lr-0 margin-t-20--under-1024" target="_blank" rel="noopener">
               <div class="download-animation">
 
                 <span class="download-inner-top">
@@ -146,121 +152,121 @@
           </div>
 
         </div>
-        
+
       </div>
 
     </div>
 
     <div class="vertical-inline-flex pad-tb-40 h-100 bg-e8e8e8">
-           
+
 
       <div class="flex__mid-container max-w-1140">
 
         <div class="vertical-inline-flex">
 
-<xmp class="vertical-inline-flex max-w-440p margin-r-20">import styled from '@emotion/styled';
-import { css } from '@emotion/core';
-  
-const inlineFlexBase = css`
-  position: relative;
-  display: inline-flex;
-  width: 100%;
-`;
+          <xmp class="vertical-inline-flex max-w-440p margin-r-20">import styled from '@emotion/styled';
+            import { css } from '@emotion/core';
 
-export const BaseWrapperVertical = styled.div`
-  ${ inlineFlexBase };
+            const inlineFlexBase = css`
+            position: relative;
+            display: inline-flex;
+            width: 100%;
+            `;
 
-  flex-direction: column;
-`;
+            export const BaseWrapperVertical = styled.div`
+            ${ inlineFlexBase };
 
-export const BaseWrapperHorizontal = styled.div`
-  ${ inlineFlexBase };
+            flex-direction: column;
+            `;
 
-  flex-direction: row;
-`;
+            export const BaseWrapperHorizontal = styled.div`
+            ${ inlineFlexBase };
 
-or
+            flex-direction: row;
+            `;
 
-interface IFlexWrapperProps {
-  flexDirection: 'row' | 'column';
-}
+            or
 
-export const FlexWrapper = styled.div<IFlexWrapperProps>`
-  ${ inlineFlexBase };
-`;
+            interface IFlexWrapperProps {
+            flexDirection: 'row' | 'column';
+            }
 
-</xmp>
+            export const FlexWrapper = styled.div<IFlexWrapperProps>`
+              ${ inlineFlexBase };
+              `;
 
-          </div>
+          </xmp>
+
         </div>
-  </div>
-
-
-
-
-  <div class="vertical-inline-flex pad-tb-40 h-100 bg-color-blue">
-           
-
-    <div class="flex__mid-container direction--column max-w-1140">
-      <div class="if__content-panel w-100-perc direction--column pad-tb-20">
-
-        <h4 class="font-s--24 font-w--300 color--ffffff">
-
-
-          Component Descriptions define components in isolation.
-        </h4>
-        <p class="font-s--16 margin-t-0 color--ffffff">
-          The component name answers the question:
-          what does it do?
-        </p>
-
-
-      </div>
-      <div class="if__content-panel w-100-perc direction--column pad-tb-20  margin-t-20">
-        <h4 class="font-s--24 font-w--300 color--ffffff">
-          Interface Descriptions define components in relation to their environment.
-        </h4>
-        <p class="font-s--16 margin-t-0 color--ffffff">
-          The component name answers the question:
-          How can it be used?
-        </p>
       </div>
     </div>
 
 
-  </div>
+
+
+    <div class="vertical-inline-flex pad-tb-40 h-100 bg-color-blue">
+
+
+      <div class="flex__mid-container direction--column max-w-1140">
+        <div class="if__content-panel w-100-perc direction--column pad-tb-20">
+
+          <h4 class="font-s--24 font-w--300 color--ffffff">
+
+
+            Component Descriptions define components in isolation.
+          </h4>
+          <p class="font-s--16 margin-t-0 color--ffffff">
+            The component name answers the question:
+            what does it do?
+          </p>
+
+
+        </div>
+        <div class="if__content-panel w-100-perc direction--column pad-tb-20  margin-t-20">
+          <h4 class="font-s--24 font-w--300 color--ffffff">
+            Interface Descriptions define components in relation to their environment.
+          </h4>
+          <p class="font-s--16 margin-t-0 color--ffffff">
+            The component name answers the question:
+            How can it be used?
+          </p>
+        </div>
+      </div>
+
+
+    </div>
 
     <div class="vertical-inline-flex h-100 bg-e8e8e8">
-      
+
       <div class="horizontal-inline-flex pad-tb-40 h-100">
         <div class="flex__mid-container direction--column max-w-1140">
 
           <div class="grid  margin-t-80">
             <div class="grid__inner column-under--960">
 
-<xmp class="vertical-inline-flex  w-100-perc max-w-440p margin-r-20 ">BaseWrapper {
-  position: relative;
-  padding: 20px 0;
-  margin: 0;
-  width: 100%;
-}
+              <xmp class="vertical-inline-flex  w-100-perc max-w-440p margin-r-20 ">BaseWrapper {
+                position: relative;
+                padding: 20px 0;
+                margin: 0;
+                width: 100%;
+                }
 
-IF { display: inline-flex; }
-IB { display: inline-block; }
+                IF { display: inline-flex; }
+                IB { display: inline-block; }
 
-<IF BaseWrapper />
-<IB BaseWrapper />
+                <IF BaseWrapper />
+                <IB BaseWrapper />
 
-const IFBaseWrapper = styled('div')`
-  display: inline-flex;
-  position: relative;
-  padding: 20px 0;
-  margin: 0;
-  width: 100%;
-`
-render(<IFBaseWrapper> </IFBaseWrapper>)
+                const IFBaseWrapper = styled('div')`
+                display: inline-flex;
+                position: relative;
+                padding: 20px 0;
+                margin: 0;
+                width: 100%;
+                `
+                render(<IFBaseWrapper> </IFBaseWrapper>)
 
-</xmp>
+              </xmp>
               <div class="browser-window ">
                 <div class="browser-window__bar">
                   <div class="dot"></div>
@@ -281,22 +287,22 @@ render(<IFBaseWrapper> </IFBaseWrapper>)
           <div class="flex__mid-container max-w-1140">
             <div class="grid">
               <div class="grid__inner column-under--960">
-<xmp class="vertical-inline-flex max-w-440p margin-r-20 ">MidContainer {
-  position: relative;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 20px;
-  padding-right: 20px;
-  width: 100%;
-  max-width: ${ width };
-}
+                <xmp class="vertical-inline-flex max-w-440p margin-r-20 ">MidContainer {
+                  position: relative;
+                  margin-left: auto;
+                  margin-right: auto;
+                  padding-left: 20px;
+                  padding-right: 20px;
+                  width: 100%;
+                  max-width: ${ width };
+                  }
 
-F { display: flex; }
-B { display: block; }
+                  F { display: flex; }
+                  B { display: block; }
 
-<FMidContainer />
-<BMidContainer />
-</xmp>
+                  <FMidContainer />
+                  <BMidContainer />
+                </xmp>
                 <div class="browser-window ">
                   <div class="browser-window__bar">
                     <div class="dot"></div>
@@ -320,18 +326,18 @@ B { display: block; }
               <div class="grid">
                 <div class="grid__inner column-under--960">
 
-<xmp class="vertical-inline-flex max-w-440p margin-r-20 ">ContentPanel { position: relative; }
+                  <xmp class="vertical-inline-flex max-w-440p margin-r-20 ">ContentPanel { position: relative; }
 
-IF { display: inline-flex; }
-IB { display: inline-block; }
-F { display: flex; }
-B { display: block; }
+                    IF { display: inline-flex; }
+                    IB { display: inline-block; }
+                    F { display: flex; }
+                    B { display: block; }
 
-<IF ContentPanel />
-<IB ContentPanel />
-<F ContentPanel />
-<B ContentPanel />
-</xmp>
+                    <IF ContentPanel />
+                    <IB ContentPanel />
+                    <F ContentPanel />
+                    <B ContentPanel />
+                  </xmp>
                   <div class="browser-window ">
                     <div class="browser-window__bar">
                       <div class="dot"></div>
@@ -355,72 +361,71 @@ B { display: block; }
               </div>
             </div>
           </div>
- 
+
           <div class="vertical-inline-flex pad-tb-40 h-100 bg-e8e8e8 margin-t-100">
-           
-
-              <div class="flex__mid-container max-w-1140">
-
-                <div class="vertical-inline-flex">
-
-<xmp class="vertical-inline-flex max-w-440p margin-r-20">interface IFlexProps = {
-  direction?: 'row' | 'column',
-}
-
-export const Flex = styled.div<IFlexProps>`
-  position: relative;
-  display: inline-flex;
-
-  flex-direction: ${props => props.direction};
-  flex-direction: ${direction};
-`;
-
-render(<Flex direction="row"></Flex>)
 
 
-</xmp>
+            <div class="flex__mid-container max-w-1140">
 
-                  </div>
-                </div>
+              <div class="vertical-inline-flex">
+
+                <xmp class="vertical-inline-flex max-w-440p margin-r-20">interface IFlexProps = {
+                  direction?: 'row' | 'column',
+                  }
+
+                  export const Flex = styled.div<IFlexProps>`
+                    position: relative;
+                    display: inline-flex;
+
+                    flex-direction: ${props => props.direction};
+                    flex-direction: ${direction};
+                    `;
+
+                    render(<Flex direction="row"></Flex>)
+
+
+                </xmp>
+
+              </div>
+            </div>
           </div>
           <div class="vertical-inline-flex pad-tb-40 h-100">
-                <div class="flex__mid-container max-w-1140">
-                <div class="grid margin-t-80">
-                  <div class="grid__inner column-under--960">
+            <div class="flex__mid-container max-w-1140">
+              <div class="grid margin-t-80">
+                <div class="grid__inner column-under--960">
 
-<xmp class="vertical-inline-flex max-w-440p margin-r-20 ">HorizontalIF {
-  position: relative;
-  flex-direction: row;
-}
+                  <xmp class="vertical-inline-flex max-w-440p margin-r-20 ">HorizontalIF {
+                    position: relative;
+                    flex-direction: row;
+                    }
 
-IF { display: inline-flex; }
-F { display: flex; }
+                    IF { display: inline-flex; }
+                    F { display: flex; }
 
-<Horizontal IF />
-<Horizontal F />
-</xmp>
-                    <div class="browser-window ">
-                      <div class="browser-window__bar">
-                        <div class="dot"></div>
-                        <div class="dot"></div>
-                        <div class="dot"></div>
-                      </div>
-                      <div class="browser-window__content">
-                        <div class="if__base-wrapper border-1px-silver">
-                          <div class="flex__mid-container max-w-75-perc border-1px-silver ">
-                            <div class="horizontal-inline-flex pad-all-10 margin-all-10 border-2px-yellow">
+                    <Horizontal IF />
+                    <Horizontal F />
+                  </xmp>
+                  <div class="browser-window ">
+                    <div class="browser-window__bar">
+                      <div class="dot"></div>
+                      <div class="dot"></div>
+                      <div class="dot"></div>
+                    </div>
+                    <div class="browser-window__content">
+                      <div class="if__base-wrapper border-1px-silver">
+                        <div class="flex__mid-container max-w-75-perc border-1px-silver ">
+                          <div class="horizontal-inline-flex pad-all-10 margin-all-10 border-2px-yellow">
 
 
-                              <div class="flex__content-panel border-1px-silver pad-all-10 flex--1">
-                                <p class="font-s--16 color--ffffff">
-                                  A
-                                </p>
-                              </div>
-                              <div class="flex__content-panel border-1px-silver pad-all-10 flex--1">
-                                <p class="font-s--16 color--ffffff">
-                                  B
-                                </p>
-                              </div>
+                            <div class="flex__content-panel border-1px-silver pad-all-10 flex--1">
+                              <p class="font-s--16 color--ffffff">
+                                A
+                              </p>
+                            </div>
+                            <div class="flex__content-panel border-1px-silver pad-all-10 flex--1">
+                              <p class="font-s--16 color--ffffff">
+                                B
+                              </p>
                             </div>
                           </div>
                         </div>
@@ -430,24 +435,25 @@ F { display: flex; }
                 </div>
               </div>
             </div>
-          
+          </div>
+
           <div class="vertical-inline-flex h-100">
             <div class="horizontal-inline-flex pad-tb-40 h-100">
               <div class="flex__mid-container max-w-1140">
                 <div class="grid">
                   <div class="grid__inner column-under--960">
 
-<xmp class="vertical-inline-flex max-w-440p margin-r-20 ">VerticalIF {
-  position: relative;
-  flex-direction: column;
-}
+                    <xmp class="vertical-inline-flex max-w-440p margin-r-20 ">VerticalIF {
+                      position: relative;
+                      flex-direction: column;
+                      }
 
-IF { display: inline-flex; }
-F { display: flex; }
+                      IF { display: inline-flex; }
+                      F { display: flex; }
 
-<Vertical IF />
-<Vertical F />
-</xmp>
+                      <Vertical IF />
+                      <Vertical F />
+                    </xmp>
                     <div class="browser-window ">
                       <div class="browser-window__bar">
                         <div class="dot"></div>
@@ -687,22 +693,22 @@ F { display: flex; }
                 <div class="grid">
                   <div class="grid__inner column-under--960">
 
-<xmp class="vertical-inline-flex max-w-440p margin-r-20 ">AbsoluteCenterIF {
-  position: absolute;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
+                    <xmp class="vertical-inline-flex max-w-440p margin-r-20 ">AbsoluteCenterIF {
+                      position: absolute;
+                      display: inline-flex;
+                      align-items: center;
+                      justify-content: center;
+                      top: 50%;
+                      left: 50%;
+                      transform: translate(-50%, -50%);
+                      }
 
-IF { display: inline-flex; }
-F { display: flex; }
+                      IF { display: inline-flex; }
+                      F { display: flex; }
 
-<AbsoluteCenter IF />
-<AbsoluteCenter F />
-</xmp>
+                      <AbsoluteCenter IF />
+                      <AbsoluteCenter F />
+                    </xmp>
                     <div class="browser-window ">
                       <div class="browser-window__bar">
                         <div class="dot"></div>
@@ -749,22 +755,22 @@ F { display: flex; }
                 <div class="grid">
                   <div class="grid__inner column-under--960">
 
-<xmp class="vertical-inline-flex max-w-440p margin-r-20 ">RelativeCenterIF {
-  position: relative;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
+                    <xmp class="vertical-inline-flex max-w-440p margin-r-20 ">RelativeCenterIF {
+                      position: relative;
+                      display: inline-flex;
+                      align-items: center;
+                      justify-content: center;
+                      top: 50%;
+                      left: 50%;
+                      transform: translate(-50%, -50%);
+                      }
 
-IF { display: inline-flex; }
-F { display: flex; }
+                      IF { display: inline-flex; }
+                      F { display: flex; }
 
-<RelativeCenter IF />
-<RelativeCenter F />
-</xmp>
+                      <RelativeCenter IF />
+                      <RelativeCenter F />
+                    </xmp>
                     <div class="browser-window ">
                       <div class="browser-window__bar">
                         <div class="dot"></div>
@@ -1004,21 +1010,21 @@ F { display: flex; }
           </div>
 
           <div class="vertical-inline-flex pad-tb-40 h-100">
-           
+
 
             <div class="flex__mid-container direction--column max-w-1140">
               <div class="if__content-panel w-100-perc direction--column pad-tb-20 margin-t-50">
-        
+
                 <h4 class="font-s--24 font-w--300">
-        
-        
+
+
                   Content Dependent Naming
                 </h4>
                 <p class="font-s--16 margin-t-0">
                   Components are not reusable
                 </p>
-        
-        
+
+
               </div>
               <div class="vertical-inline-flex">
                 <p class="color--default">
@@ -1077,12 +1083,12 @@ F { display: flex; }
               </div>
 
             </div>
-        
-        
+
+
           </div>
 
           <div class="vertical-inline-flex h-100">
-          
+
 
             <div class="horizontal-inline-flex pad-tb-40 h-100">
               <div class="flex__mid-container max-w-1140">
@@ -1256,9 +1262,9 @@ img {
 }
 
 .layer-block {
-  position: relative;
-  width: 100%;
-  float: left;
+position: relative;
+width: 100%;
+float: left;
 }
 
 .direction--row { flex-direction: row }
@@ -1317,15 +1323,15 @@ img {
 
 @media screen and (max-width: 960px) {
   .column-under--960 {
-    flex-direction: column !important;
-  }
+  flex-direction: column !important;
+}
 
-  .hide--under-960 {
-    display: none !important;
-  }
+.hide--under-960 {
+  isplay: none !important;
+}
 
-  .w-100-perc--under-960 {
-    width: 100% !important;
+.w-100-perc--under-960 {
+  width: 100% !important;
   }
 }
 
